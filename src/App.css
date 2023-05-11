@@ -1,0 +1,39 @@
+img{
+  height: 200px;
+  width: 330px;
+}
+.App{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  /* background-color: red; */
+  
+ 
+}
+.container{
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* padding: 10px; */
+  /* gap: 10px; */
+  border: 1px solid black;
+  background-color: beige;
+  object-fit: cover;
+  position: relative;
+  /* box-shadow: inset 8px 8px 12px rebeccapurple,
+               inset -8px -8px 10px red,
+                 4px 4px 14px rebeccapurple,
+                 -4px -4px 14px red; */
+}
+.dol{
+  position: absolute;
+ transform: rotate(-49deg);
+  font-size: 14px;
+}

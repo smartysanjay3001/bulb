@@ -1,0 +1,103 @@
+.container{
+    background: rgba(0, 0, 0, 0.27);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    padding: 20px;
+    border-radius: 40px;
+    background-color: #ffffff00;
+    box-shadow: inset 12px 12px 10px gray,
+                 inset -12px -12px 10px  gray,
+                 8px 8px 12px  rgba(245, 245, 245, 0.1),
+                 -8px -8px 12px rgba(245, 245, 245, 0.1);
+}
+
+img{
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+   
+}
+.button{
+    margin: 40px 0 0 0;
+    display: flex;
+    gap: 140px;
+}
+button{
+    position: relative;
+    text-align: center;
+    border: none;
+    font-size: 24px;
+    width: 150px;
+    height: 50px;
+    background-color: palevioletred;
+    border-radius: 30px;
+    color: #fff;
+    box-shadow: inset  4px 4px 8px gray,
+                 inset -4px -4px 8px  whitesmoke,
+                 4px 4px 8px gray,
+                 -4px -4px 8px whitesmoke;
+     cursor: pointer;  
+               
+}
+button:hover{
+    background: #71aeb1;
+    color: #050801;
+    box-shadow: 0 0 5px  #03e9f4,
+                0 0 25px  #03e9f4,
+                0 0  50px   #03e9f4,
+                0 0  100px   #03e9f4 ;
+}
+
+
+button::before{
+    content: '';
+    position: absolute;
+    height: 6px;
+    width: 10px;
+    border: 1px solid #fff;
+    top: -2.5px;
+    right: 10px;
+    border-radius: 40%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+    background-color: beige;
+
+
+}
+
+button:hover:after{
+    width: 20px;
+    left: 80%;
+    box-shadow: inset 4px 4px 12px beige;
+} 
+button::after{
+    content: '';
+    position: absolute;
+    height: 6px;
+    width: 10px;
+    border: 1px solid #fff;
+    bottom: -2.5px;
+    left: 18px;
+    border-radius: 40%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+    background-color: beige;
+
+}
+button:hover:before{
+    width: 20px;
+    left: 20%;
+} 
